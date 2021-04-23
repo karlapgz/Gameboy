@@ -1,3 +1,3 @@
 # Gameboy
 
-# Gameboy realizado con HTML, CSS y JS
+Gameboy realizado con HTML, CSS y JS
