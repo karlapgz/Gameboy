@@ -1,0 +1,233 @@
+body {
+    background: linear-gradient(#bcc9ee, #b489cc);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.cuerpo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: 100%;
+}
+
+.container {
+    background: linear-gradient(#f8c5e1,#CF8BF3, #FDB99B);
+    width: 20rem;
+    height: 31rem;
+    border: 2px solid #333;
+    border-radius: 10px 10px 60px 10px;
+    margin: auto;
+}
+
+.container-arriba {
+    display: flex;
+}
+
+.arriba {
+    width: 18rem;
+    height: 1.3rem;
+    border: 1px solid #333;
+}
+
+.arriba-l {
+    width: 1rem;
+    height: 1.3rem;
+    border: 1px solid #333;
+}
+
+.left {
+    border-radius: 5px 0 0 0;
+}
+
+.right {
+    border-radius: 0 5px 0 0;
+}
+
+.abertura-arriba {
+    width: 40px;
+    height: 5px;
+    border: 2px solid #333;
+    border-radius: 20px;
+    margin: 5px;
+    background-color: #c387e4;
+}
+
+/**** Pantalla ****/
+
+.container-pantalla {
+    width: 18rem;
+    height: 13rem;
+    background-color: #4a3f35;
+    border-radius: 9px 9px 35px 9px;
+    margin: 15px auto 0;
+    position: relative;
+}
+
+.lineas-pantalla {
+    width: 100px;
+    height: 3px;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    background-color: #7c7575;
+}
+
+.lineas-pantalla:after {
+    content: "";
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    right: -160px;
+    background-color: #7c7575;
+}
+
+.pantalla {
+    width: 12rem;
+    height: 10rem;
+    background-color: #e7cdf3;
+    margin: auto;
+    transform: translateY(25px);
+    border: 2px #000 solid;
+}
+
+.title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 19px;
+    text-align: center;
+    margin-top: 4rem;
+    opacity: 0;
+}
+
+.title-transition {
+    animation: moveInTop 2s ease-out;
+    opacity: 1;
+}
+
+.nintendo {
+    margin: 0;
+    font-family: 'Mukta', sans-serif;
+}
+
+.gameboy {
+    margin: 2px 5px;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+}
+
+.titulo {
+    display: flex;
+    margin-left: 20px;
+}
+
+/*** parte media ***/
+.parte-media {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*** cruz ***/
+
+.container-cruz {
+    width: 85px;
+    height: 85px;
+    border-radius: 100%;
+    border: 2px #854ca3 solid;
+    margin: 30px 20px;
+}
+
+.cruz {
+    margin: 5px auto;
+    width: 80px;
+    height: 80px;
+    background-color: #666;
+    clip-path: polygon(10% 30%, 35% 30%, 35% 0, 65% 0%, 65% 30%, 90% 30%, 90% 60%, 65% 60%, 65% 89%, 35% 89%, 35% 60%, 10% 60%);
+}
+
+/***** Botones *****/
+
+.container-botones {
+    height: 90px;
+    padding: 5px;
+    border-radius: 30%;
+    position: relative;
+    margin: 20px 70px 0;
+    transform: rotate(60deg);
+    border: 2px #854ca3 solid;
+}
+
+.boton1 {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background-color: #b964b9;
+}
+
+.boton1::after {
+    content: "";
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background-color: #c387e4;
+    position: absolute;
+    top: 56px;
+}
+
+/*** parte baja ***/
+
+.parte-baja-botones {
+    display: flex;
+    justify-content: center;
+}
+
+.coso {
+    transform: rotate(-30deg);
+}
+
+.coso p {
+    margin: 0 4px;
+    text-transform: uppercase;
+    font-family: 'Mukta', sans-serif;
+    font-size: 12px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.boton2 {
+    width: 40px;
+    height: 10px;
+    background-color: #444;
+    border-radius: 20%;
+}
+
+.start {
+    cursor: pointer;
+}
+
+.section-aberturas {
+    display: flex;
+    justify-content: flex-end;
+    margin: 45px 10px;
+    transform: rotate(-30deg);
+}
+
+.abertura {
+    width: 4px;
+    height: 35px;
+    background-color: #333;
+    margin: 0 5px;
+}
+
+@keyframes moveInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-4rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
